@@ -48,7 +48,7 @@ jobs:
         with:
           generate_release_notes: true
           files: |
-            target/release/bundle/*/rqbit-desktop_*.@(deb|rpm|appimage)
+            target/release/bundle/*/rqbit-desktop_*.{deb,rpm,appimage}
 
   build-docker-cross:
     runs-on: ubuntu-latest
